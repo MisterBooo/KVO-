@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA10A4E41FE79C4B002E363A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA10A4E31FE79C4B002E363A /* AppDelegate.m */; };
+		AA10A4E71FE79C4C002E363A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA10A4E61FE79C4C002E363A /* ViewController.m */; };
+		AA10A4EA1FE79C4C002E363A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA10A4E81FE79C4C002E363A /* Main.storyboard */; };
+		AA10A4EC1FE79C4C002E363A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA10A4EB1FE79C4C002E363A /* Assets.xcassets */; };
+		AA10A4EF1FE79C4C002E363A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA10A4ED1FE79C4C002E363A /* LaunchScreen.storyboard */; };
+		AA10A4F21FE79C4C002E363A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA10A4F11FE79C4C002E363A /* main.m */; };
+		AA10A4FC1FE79C4C002E363A /* KVO____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA10A4FB1FE79C4C002E363A /* KVO____Tests.m */; };
+		AA10A5071FE79C4C002E363A /* KVO____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA10A5061FE79C4C002E363A /* KVO____UITests.m */; };
+		AA10A5161FE79C88002E363A /* NSObject+YYKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = AA10A5151FE79C88002E363A /* NSObject+YYKVO.m */; };
+		AA10A5191FE79C9C002E363A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AA10A5181FE79C9C002E363A /* Person.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA10A4F81FE79C4C002E363A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA10A4D71FE79C4B002E363A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA10A4DE1FE79C4B002E363A;
+			remoteInfo = "KVO实现原理";
+		};
+		AA10A5031FE79C4C002E363A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA10A4D71FE79C4B002E363A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA10A4DE1FE79C4B002E363A;
+			remoteInfo = "KVO实现原理";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA10A4DF1FE79C4B002E363A /* KVO实现原理.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KVO实现原理.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA10A4E21FE79C4B002E363A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA10A4E31FE79C4B002E363A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AA10A4E51FE79C4B002E363A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AA10A4E61FE79C4C002E363A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AA10A4E91FE79C4C002E363A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA10A4EB1FE79C4C002E363A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA10A4EE1FE79C4C002E363A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA10A4F01FE79C4C002E363A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA10A4F11FE79C4C002E363A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA10A4F71FE79C4C002E363A /* KVO实现原理Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KVO实现原理Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA10A4FB1FE79C4C002E363A /* KVO____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "KVO____Tests.m"; sourceTree = "<group>"; };
+		AA10A4FD1FE79C4C002E363A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA10A5021FE79C4C002E363A /* KVO实现原理UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KVO实现原理UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA10A5061FE79C4C002E363A /* KVO____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "KVO____UITests.m"; sourceTree = "<group>"; };
+		AA10A5081FE79C4C002E363A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA10A5141FE79C88002E363A /* NSObject+YYKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYKVO.h"; sourceTree = "<group>"; };
+		AA10A5151FE79C88002E363A /* NSObject+YYKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYKVO.m"; sourceTree = "<group>"; };
+		AA10A5171FE79C9C002E363A /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		AA10A5181FE79C9C002E363A /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA10A4DC1FE79C4B002E363A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA10A4F41FE79C4C002E363A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA10A4FF1FE79C4C002E363A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA10A4D61FE79C4B002E363A = {
+			isa = PBXGroup;
+			children = (
+				AA10A4E11FE79C4B002E363A /* KVO实现原理 */,
+				AA10A4FA1FE79C4C002E363A /* KVO实现原理Tests */,
+				AA10A5051FE79C4C002E363A /* KVO实现原理UITests */,
+				AA10A4E01FE79C4B002E363A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA10A4E01FE79C4B002E363A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA10A4DF1FE79C4B002E363A /* KVO实现原理.app */,
+				AA10A4F71FE79C4C002E363A /* KVO实现原理Tests.xctest */,
+				AA10A5021FE79C4C002E363A /* KVO实现原理UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA10A4E11FE79C4B002E363A /* KVO实现原理 */ = {
+			isa = PBXGroup;
+			children = (
+				AA10A4E21FE79C4B002E363A /* AppDelegate.h */,
+				AA10A4E31FE79C4B002E363A /* AppDelegate.m */,
+				AA10A4E51FE79C4B002E363A /* ViewController.h */,
+				AA10A4E61FE79C4C002E363A /* ViewController.m */,
+				AA10A4E81FE79C4C002E363A /* Main.storyboard */,
+				AA10A4EB1FE79C4C002E363A /* Assets.xcassets */,
+				AA10A4ED1FE79C4C002E363A /* LaunchScreen.storyboard */,
+				AA10A4F01FE79C4C002E363A /* Info.plist */,
+				AA10A4F11FE79C4C002E363A /* main.m */,
+				AA10A5141FE79C88002E363A /* NSObject+YYKVO.h */,
+				AA10A5151FE79C88002E363A /* NSObject+YYKVO.m */,
+				AA10A5171FE79C9C002E363A /* Person.h */,
+				AA10A5181FE79C9C002E363A /* Person.m */,
+			);
+			path = "KVO实现原理";
+			sourceTree = "<group>";
+		};
+		AA10A4FA1FE79C4C002E363A /* KVO实现原理Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AA10A4FB1FE79C4C002E363A /* KVO____Tests.m */,
+				AA10A4FD1FE79C4C002E363A /* Info.plist */,
+			);
+			path = "KVO实现原理Tests";
+			sourceTree = "<group>";
+		};
+		AA10A5051FE79C4C002E363A /* KVO实现原理UITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA10A5061FE79C4C002E363A /* KVO____UITests.m */,
+				AA10A5081FE79C4C002E363A /* Info.plist */,
+			);
+			path = "KVO实现原理UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA10A4DE1FE79C4B002E363A /* KVO实现原理 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA10A50B1FE79C4C002E363A /* Build configuration list for PBXNativeTarget "KVO实现原理" */;
+			buildPhases = (
+				AA10A4DB1FE79C4B002E363A /* Sources */,
+				AA10A4DC1FE79C4B002E363A /* Frameworks */,
+				AA10A4DD1FE79C4B002E363A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KVO实现原理";
+			productName = "KVO实现原理";
+			productReference = AA10A4DF1FE79C4B002E363A /* KVO实现原理.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA10A4F61FE79C4C002E363A /* KVO实现原理Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA10A50E1FE79C4C002E363A /* Build configuration list for PBXNativeTarget "KVO实现原理Tests" */;
+			buildPhases = (
+				AA10A4F31FE79C4C002E363A /* Sources */,
+				AA10A4F41FE79C4C002E363A /* Frameworks */,
+				AA10A4F51FE79C4C002E363A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA10A4F91FE79C4C002E363A /* PBXTargetDependency */,
+			);
+			name = "KVO实现原理Tests";
+			productName = "KVO实现原理Tests";
+			productReference = AA10A4F71FE79C4C002E363A /* KVO实现原理Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA10A5011FE79C4C002E363A /* KVO实现原理UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA10A5111FE79C4C002E363A /* Build configuration list for PBXNativeTarget "KVO实现原理UITests" */;
+			buildPhases = (
+				AA10A4FE1FE79C4C002E363A /* Sources */,
+				AA10A4FF1FE79C4C002E363A /* Frameworks */,
+				AA10A5001FE79C4C002E363A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA10A5041FE79C4C002E363A /* PBXTargetDependency */,
+			);
+			name = "KVO实现原理UITests";
+			productName = "KVO实现原理UITests";
+			productReference = AA10A5021FE79C4C002E363A /* KVO实现原理UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA10A4D71FE79C4B002E363A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = MisterBooo;
+				TargetAttributes = {
+					AA10A4DE1FE79C4B002E363A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					AA10A4F61FE79C4C002E363A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AA10A4DE1FE79C4B002E363A;
+					};
+					AA10A5011FE79C4C002E363A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AA10A4DE1FE79C4B002E363A;
+					};
+				};
+			};
+			buildConfigurationList = AA10A4DA1FE79C4B002E363A /* Build configuration list for PBXProject "KVO实现原理" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA10A4D61FE79C4B002E363A;
+			productRefGroup = AA10A4E01FE79C4B002E363A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA10A4DE1FE79C4B002E363A /* KVO实现原理 */,
+				AA10A4F61FE79C4C002E363A /* KVO实现原理Tests */,
+				AA10A5011FE79C4C002E363A /* KVO实现原理UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA10A4DD1FE79C4B002E363A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA10A4EF1FE79C4C002E363A /* LaunchScreen.storyboard in Resources */,
+				AA10A4EC1FE79C4C002E363A /* Assets.xcassets in Resources */,
+				AA10A4EA1FE79C4C002E363A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA10A4F51FE79C4C002E363A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA10A5001FE79C4C002E363A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA10A4DB1FE79C4B002E363A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA10A5161FE79C88002E363A /* NSObject+YYKVO.m in Sources */,
+				AA10A4E71FE79C4C002E363A /* ViewController.m in Sources */,
+				AA10A5191FE79C9C002E363A /* Person.m in Sources */,
+				AA10A4F21FE79C4C002E363A /* main.m in Sources */,
+				AA10A4E41FE79C4B002E363A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA10A4F31FE79C4C002E363A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA10A4FC1FE79C4C002E363A /* KVO____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA10A4FE1FE79C4C002E363A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA10A5071FE79C4C002E363A /* KVO____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA10A4F91FE79C4C002E363A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA10A4DE1FE79C4B002E363A /* KVO实现原理 */;
+			targetProxy = AA10A4F81FE79C4C002E363A /* PBXContainerItemProxy */;
+		};
+		AA10A5041FE79C4C002E363A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA10A4DE1FE79C4B002E363A /* KVO实现原理 */;
+			targetProxy = AA10A5031FE79C4C002E363A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA10A4E81FE79C4C002E363A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA10A4E91FE79C4C002E363A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA10A4ED1FE79C4C002E363A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA10A4EE1FE79C4C002E363A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA10A5091FE79C4C002E363A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA10A50A1FE79C4C002E363A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA10A50C1FE79C4C002E363A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NHU5364QV;
+				INFOPLIST_FILE = "KVO实现原理/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MisterBooo.KVO----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA10A50D1FE79C4C002E363A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NHU5364QV;
+				INFOPLIST_FILE = "KVO实现原理/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MisterBooo.KVO----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA10A50F1FE79C4C002E363A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NHU5364QV;
+				INFOPLIST_FILE = "KVO实现原理Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MisterBooo.KVO----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KVO实现原理.app/KVO实现原理";
+			};
+			name = Debug;
+		};
+		AA10A5101FE79C4C002E363A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NHU5364QV;
+				INFOPLIST_FILE = "KVO实现原理Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MisterBooo.KVO----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KVO实现原理.app/KVO实现原理";
+			};
+			name = Release;
+		};
+		AA10A5121FE79C4C002E363A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NHU5364QV;
+				INFOPLIST_FILE = "KVO实现原理UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MisterBooo.KVO----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "KVO实现原理";
+			};
+			name = Debug;
+		};
+		AA10A5131FE79C4C002E363A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NHU5364QV;
+				INFOPLIST_FILE = "KVO实现原理UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MisterBooo.KVO----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "KVO实现原理";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA10A4DA1FE79C4B002E363A /* Build configuration list for PBXProject "KVO实现原理" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA10A5091FE79C4C002E363A /* Debug */,
+				AA10A50A1FE79C4C002E363A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA10A50B1FE79C4C002E363A /* Build configuration list for PBXNativeTarget "KVO实现原理" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA10A50C1FE79C4C002E363A /* Debug */,
+				AA10A50D1FE79C4C002E363A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA10A50E1FE79C4C002E363A /* Build configuration list for PBXNativeTarget "KVO实现原理Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA10A50F1FE79C4C002E363A /* Debug */,
+				AA10A5101FE79C4C002E363A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA10A5111FE79C4C002E363A /* Build configuration list for PBXNativeTarget "KVO实现原理UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA10A5121FE79C4C002E363A /* Debug */,
+				AA10A5131FE79C4C002E363A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA10A4D71FE79C4B002E363A /* Project object */;
+}
