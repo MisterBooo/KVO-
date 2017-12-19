@@ -9,5 +9,7 @@
 #import "Person.h"
 
 @implementation Person
-
+- (void)speak{
+    NSLog(@"my name's %@",self.name);
+}
 @end

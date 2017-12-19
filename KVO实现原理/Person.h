@@ -11,4 +11,5 @@
 @interface Person : NSObject
 //** name */
 @property(nonatomic, copy) NSString *name;
+- (void)speak;
 @end
